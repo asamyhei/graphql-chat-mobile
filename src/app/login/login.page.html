@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-align-items-center">
+    <ion-grid>
+        <ion-row>
+            <ion-input #inputPseudo placeholder="Pseudo"></ion-input>
+        </ion-row>
+        <ion-row>
+            <ion-input #inputPassword placeholder="Mot de passe" type="password"></ion-input>
+        </ion-row>
+        <ion-row>
+            <ion-button (click)="connect(inputPseudo, inputPassword)">Login</ion-button>
+        </ion-row>
+    </ion-grid>
+</ion-content>
